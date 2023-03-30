@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply max-w-screen-2xl p-4 mx-auto;
+  }
+
+  .glass {
+    @apply bg-zinc-100/95 backdrop-blur supports-[backdrop-filter]:bg-zinc-100/75;
+  }
+
+  .link {
+    @apply uppercase text-sm font-semibold text-zinc-700 hover:text-zinc-900;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-1 link text-xs p-2 rounded-full border-2 border-zinc-500 hover:border-zinc-900 focus:ring focus:ring-red-500;
+  }
+
+  .btn-filled {
+    @apply bg-zinc-900 border-zinc-900 text-zinc-100 hover:text-zinc-100;
+  }
+
+  .frame {
+    @apply shadow-[0_0_0_1px_#18181b] my-[1px];
+  }
+
+  .label {
+    @apply capitalize ml-4 text-sm;
+  }
+
+  .input {
+    @apply block w-full py-3 px-5 mt-1 bg-white rounded-full outline-none focus:ring-2 focus:ring-red-500;
+  }
+}
